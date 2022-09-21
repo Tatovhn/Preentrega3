@@ -1,0 +1,45 @@
+$colors:(font:#fbfff1,hover:yellow,mobile:#dbd5b5,extension:#c69dd2);
+
+
+*{
+    color:map-get($colors, font );
+}
+// navbar
+.textoto{
+    a{text-decoration: none;
+    color:map-get($colors,font);
+    margin-top:1%;
+    margin-bottom: 1%;}
+}
+
+// titulo
+.disenio{
+    margin-top: 30px;
+    color:map-get($colors,font);
+}
+h1{
+    color:map-get($colors,font);
+}
+.aplicacionesTitulo{
+    @extend .textoto;
+    color: map-get($colors ,extension );
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+ 
+
+
+
+
+@media (max-width: 576px){
+    p{
+        color:map-get($colors,mobile)
+}  
+.textoto{
+    a{text-decoration: none;
+    color:map-get($colors,mobile);
+    margin-top:1%;
+    margin-bottom: 1%;}
+}
+
+}
+

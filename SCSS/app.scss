@@ -1,0 +1,60 @@
+@mixin appItem($width, $height,$margin){
+    width: $width;  height: $height;margin:$margin;
+}
+.galeriapp{display: none;}
+// cosas para el extend, prestadas de la pag websites
+ .galeriaweb-web{
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+     grid-row-gap: 30px;  
+    grid-column-gap:30px;
+    margin-top:2%;
+    margin-bottom:2%;
+  }
+
+.galeriaweb-item{
+ margin:auto;
+}
+  .imgWP{
+height:200 px;width:200px ; 
+    transition: all 0.2s ease;
+    opacity: 1;}
+    .imgWP:hover{
+       transform: scaleX(-1);
+         opacity:0.5;    
+       transition: all 0.4s ease;}
+
+
+
+
+ .galeriapp-web{@extend .galeriaweb-web;
+           display: grid;
+           grid-template-columns: 1fr 1fr ;
+          grid-template-rows: 1fr 1fr;
+           grid-row-gap: 30px;  
+          grid-column-gap:30px;
+          margin-top:2%;
+          margin-bottom:2%;}
+
+@media (max-width:576px){.galeriapp-web{display: none}
+.galeriapp{
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-row-gap:100px;
+}
+.galeriaapp-item{@extend .imgWP;
+@include appItem(300px,350px ,auto);
+}
+.galeriaapp-item:hover{
+    transform: scaleX(0);
+    transform: scaleY(-1);
+         opacity:0,2;    
+       transition: all 0.4s ease;
+}
+.footer-text-mobile-app{
+  @extend .footer-text-mobile;
+  font-size: 20px;;
+
+}
+}

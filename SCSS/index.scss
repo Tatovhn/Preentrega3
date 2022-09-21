@@ -1,0 +1,34 @@
+
+// layout index web
+
+.medioIndex {
+    p{display: inline; width: 40%; color:yellow;} 
+    }
+
+.imgIndexWeb{display:inline;float:center;border:none; width: 50%;height:250px;background-repeat: no-repeat;}
+    
+// layout index app
+
+// .webVista{display:none;} 
+// .medioIndex{display: none;} 
+// .medioIndex-b{display:none;}
+// .medioIndexApp{width: 80%; margin-left:25%;font-size:small;}
+// .imgIndexWeb{display:none;}
+
+//mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile 
+
+@media (max-width: 576px){
+legend{display:none;}
+.index-footer-web{display:none;} 
+.footer-redes-web{display:none;} 
+.index-footer-web-a{display: none;}
+.webVista{display:none;} .medioIndex{display: none;} 
+.medioIndex-b{display:none;}
+.medioIndexApp{width: 80%; margin-left:25%;font-size:small;}
+.footer-redes-app{margin-bottom: 25px;} 
+.logos-redes{border-radius:100px;} 
+.imgIndexWeb{display:inline-block;place-items: center;border:none; width: 50%;height:250px;background-repeat: no-repeat;}
+
+}
+
+
