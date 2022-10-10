@@ -9,4 +9,4 @@ En el archivo websites.html :" Muestras de los sitios que desarrollamos en Desar
 Respecto a la entrega anterior (https://github.com/Tatovhn/Entrega12-9.git) Se agregó la página apps, pura y exclusivamente para emplear include y extend y mixin, dado que no encontraba una forma orgánica de implementarlo en mi código.
 
 Obviamente quedan muchas mejoras estéticas que hacer , agradezco la paciencia con las últimas entregas, tuve unos problemas personales y no pude llevarlo perfectamente al día, prometo para las próximas entregas compensar el retraso y faltas estéticas.
-Tambien se cambiaron iconos de redes por versiones Svg.
+Tambien se cambiaron iconos de redes por versiones Svg. Se vinculan las redes a los íconos de redes del footer (como se indico en la clase de SEO)
